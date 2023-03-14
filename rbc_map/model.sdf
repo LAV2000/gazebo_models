@@ -1,7 +1,8 @@
+<?xml version="1.0" ?>
 <sdf version='1.7'>
   
-    <model name='unit_cylinder'>
-      <pose>0.093787 -0.086551 0.5 0 -0 0</pose>
+    <model name='border'>
+      <pose>0 0 0 0 0 0</pose>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -19,7 +20,7 @@
           <geometry>
             <cylinder>
               <radius>0.5</radius>
-              <length>1</length>
+              <length>0.01</length>
             </cylinder>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -36,19 +37,126 @@
             </friction>
           </surface>
         </collision>
-        <visual name='visual'>
+        <visual name='visual-border'>
+          <pose>0 0 0 1.57 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/border.dae</uri>
             </mesh>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Grey</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
+              <ambient>0.306 0.071 0.004 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
         </visual>
+
+        <visual name='visual-san1-red'>
+          <pose>0.05 -0.05 0 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/san1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.914 0.506 0.475 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-san1-blue'>
+          <pose>6.05 -0.05 0 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/san1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.549 0.804 0.875 1</ambient>
+              <diffuse>0.549 0.804 0.875 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-song'>
+          <pose>6.025 -6.025 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>8.1 8.1 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>0.353 0.784 1 1</ambient>
+              <diffuse>0.353 0.784 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-san2-red'>
+          <pose>2.65 -2.65 0.2 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/san2.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.914 0.506 0.475 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+         <visual name='visual-san2-blue'>
+          <pose>6.05 -2.65 0.2 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/san2.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.549 0.804 0.875 1</ambient>
+              <diffuse>0.549 0.804 0.875 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-center'>
+          <pose>4.55 -4.55 0.4 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/center.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.961 0.475 0.169 1</ambient>
+              <diffuse>0.961 0.475 0.169 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-pole-type3'>
+          <pose>5.9 -5.9 0.6 1.57 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_3.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+    
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
