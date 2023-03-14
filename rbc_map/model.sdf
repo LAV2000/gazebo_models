@@ -38,7 +38,7 @@
           </surface>
         </collision>
         <visual name='visual-border'>
-          <pose>0 0 0 1.57 0 0</pose>
+          <pose>0 0 0 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/border.dae</uri>
@@ -53,7 +53,7 @@
         </visual>
 
         <visual name='visual-san1-red'>
-          <pose>0.05 -0.05 0 1.57 0 0</pose>
+          <pose>0.05 -0.05 0 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/san1.dae</uri>
@@ -68,7 +68,7 @@
         </visual>
 
         <visual name='visual-san1-blue'>
-          <pose>6.05 -0.05 0 1.57 0 0</pose>
+          <pose>6.05 -0.05 0 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/san1.dae</uri>
@@ -98,7 +98,7 @@
         </visual>
 
         <visual name='visual-san2-red'>
-          <pose>2.65 -2.65 0.2 1.57 0 0</pose>
+          <pose>2.65 -2.65 0.2 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/san2.dae</uri>
@@ -113,7 +113,7 @@
         </visual>
 
          <visual name='visual-san2-blue'>
-          <pose>6.05 -2.65 0.2 1.57 0 0</pose>
+          <pose>6.05 -2.65 0.2 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/san2.dae</uri>
@@ -128,7 +128,7 @@
         </visual>
 
         <visual name='visual-center'>
-          <pose>4.55 -4.55 0.4 1.57 0 0</pose>
+          <pose>4.55 -4.55 0.4 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/center.dae</uri>
@@ -143,7 +143,7 @@
         </visual>
 
         <visual name='visual-pole-type3'>
-          <pose>5.9 -5.9 0.6 1.57 0 0</pose>
+          <pose>5.9 -5.9 0.6 1.5708 0 0</pose>
           <geometry>
             <mesh>
               <uri>model://rbc_map/meshes/pole_type_3.dae</uri>
@@ -152,6 +152,176 @@
             <material>
               <ambient>0.831 0.686 0.216 1</ambient>
               <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-pole-type1-1'>
+          <pose>4.55 -4.55 0.6 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-2'>
+          <pose>7.25 -4.55 0.6 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-3'>
+          <pose>7.25 -7.25 0.6 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-4'>
+          <pose>4.55 -7.25 0.6 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-pole-type1-5'>
+          <pose>2.7 -2.7 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-6'>
+          <pose>9.1 -2.7 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-7'>
+          <pose>9.1 -5.9 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-8'>
+          <pose>9.1 -9.1 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-9'>
+          <pose>2.7 -9.1 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-pole-type1-10'>
+          <pose>2.7 -5.9 0.4 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/pole_type_1.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.831 0.686 0.216 1</ambient>
+              <diffuse>0.831 0.686 0.216 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-thang-blue'>
+          <pose>6.05 -2.05 0.2 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/thang.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.5 0.5 0.5 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-thang-red'>
+          <pose>6.05 -10.05 0.2 1.5708 0 3.1416</pose>
+          <geometry>
+            <mesh>
+              <uri>model://rbc_map/meshes/thang.dae</uri>
+            </mesh>
+          </geometry>
+            <material>
+              <ambient>0.5 0.5 0.5 1</ambient>
+              <diffuse>0.5 0.5 0.5 1</diffuse>
               <specular>0.1 0.1 0.1 1</specular>
               <emissive>0 0 0 0</emissive>
             </material>
