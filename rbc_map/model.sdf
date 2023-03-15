@@ -41,7 +41,7 @@
           <pose>0 0 0 1.5708 0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://rbc_map/meshes/border.dae</uri>
+              <uri>model://rbc_map/meshes/border_final1.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -326,7 +326,151 @@
               <emissive>0 0 0 0</emissive>
             </material>
         </visual>
-    
+
+        <visual name='visual-goc-1'>
+          <pose>0.3 -0.3 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-goc-2'>
+          <pose>0.3 -11.8 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-goc-3'>
+          <pose>11.8 -11.8 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-goc-4'>
+          <pose>11.8 -0.3 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-retry-1'>
+          <pose>6.3 -0.3 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 0 1</ambient>
+              <diffuse>1 1 0 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-retry-3'>
+          <pose>5.8 -11.8 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 0.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 0 1</ambient>
+              <diffuse>1 1 0 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-start-red'>
+          <pose>0.55 -6.05 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>1 1.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 0.078 0.012 1</ambient>
+              <diffuse>1 0.078 0.012 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-start-blue'>
+          <pose>11.55 -6.05 0.06 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>1 1.5 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>0.043 0.149 0.961 1</ambient>
+              <diffuse>0.043 0.149 0.961 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
+        <visual name='visual-ring-zone-ct1'>
+          <pose>7.8 -6.05 0.355 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 1 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+        <visual name='visual-ring-zone-ct2'>
+          <pose>4.3 -6.05 0.355 0 0 0</pose>
+          <geometry>
+              <box>
+                <size>0.5 1 0.1</size>
+              </box>
+          </geometry>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+            </material>
+        </visual>
+
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
