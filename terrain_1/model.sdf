@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="terrain_1">
+    <pose>0 0 0 1.57079 0 0</pose>
+    <static>true</static>
+    <link name="boder">
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/border_final1.dae</uri></mesh>
+        </geometry>
+	      <material>
+          <ambient>0.306 0.071 0.004 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/border_final1.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="san1_red">
+      <pose>0.05 0 0.05 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san1.dae</uri></mesh>
+        </geometry>
+	      <material>
+              <ambient>0.914 0.506 0.475 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san1.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="san1_blue">
+    <pose>6.05 0 0.05 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san1.dae</uri></mesh>
+        </geometry>
+	      <material>
+              <ambient>0.549 0.804 0.875 1</ambient>
+              <diffuse>0.549 0.804 0.875 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san1.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="san2_red">
+      <pose>2.65 0.2  2.65 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san2.dae</uri></mesh>
+        </geometry>
+	      <material>
+              <ambient>0.914 0.506 0.475 1</ambient>
+              <diffuse>0.9 0.275 0.275 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san2.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+    <link name="san2_blue">
+      <pose>6.05 0.2 2.65 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san2.dae</uri></mesh>
+        </geometry>
+	      <material>
+              <ambient>0.549 0.804 0.875 1</ambient>
+              <diffuse>0.549 0.804 0.875 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/san2.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="center">
+      <pose>4.55 0.4 4.55 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/center.dae</uri></mesh>
+        </geometry>
+	      <material>
+              <ambient>0.961 0.475 0.169 1</ambient>
+              <diffuse>0.961 0.475 0.169 1</diffuse>
+              <specular>0.1 0.1 0.1 1</specular>
+              <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://terrain_1/media/center.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
